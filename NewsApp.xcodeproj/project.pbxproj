@@ -13,6 +13,7 @@
 		2A476E721EB3DAE400D9FFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A476E711EB3DAE400D9FFC1 /* Assets.xcassets */; };
 		2A476E751EB3DAE400D9FFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A476E731EB3DAE400D9FFC1 /* LaunchScreen.storyboard */; };
 		2A8A1B8E1EB5183F00808162 /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A1B8D1EB5183F00808162 /* TableViewViewController.swift */; };
+		2A8A1B901EB5372300808162 /* DescirptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A1B8F1EB5372300808162 /* DescirptionViewController.swift */; };
 		62DAD0AED05130DB965DCE55 /* Pods_NewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D8E153AABE2E834E24B469 /* Pods_NewsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		2A476E741EB3DAE400D9FFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A476E761EB3DAE400D9FFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A8A1B8D1EB5183F00808162 /* TableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
+		2A8A1B8F1EB5372300808162 /* DescirptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescirptionViewController.swift; sourceTree = "<group>"; };
 		DAFB8BC3CBD655825D4269A8 /* Pods-NewsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				2A476E731EB3DAE400D9FFC1 /* LaunchScreen.storyboard */,
 				2A476E761EB3DAE400D9FFC1 /* Info.plist */,
 				2A8A1B8D1EB5183F00808162 /* TableViewViewController.swift */,
+				2A8A1B8F1EB5372300808162 /* DescirptionViewController.swift */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A476E6D1EB3DAE400D9FFC1 /* ViewController.swift in Sources */,
+				2A8A1B901EB5372300808162 /* DescirptionViewController.swift in Sources */,
 				2A8A1B8E1EB5183F00808162 /* TableViewViewController.swift in Sources */,
 				2A476E6B1EB3DAE400D9FFC1 /* AppDelegate.swift in Sources */,
 			);

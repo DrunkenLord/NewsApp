@@ -9,17 +9,15 @@
 import UIKit
 import Alamofire
 
+var news = [NSDictionary]()
+
+var description_news: String!
+
 class TableViewViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var tableView: UITableView!
     
-    
-//    var myCustomVariable: ViewController as ViewController
-    
-//    var getMyVar = self.myCustomVariable.news_channel
-    
     let apiKey = "86682be37eaa4e739dc706f4b750fe49"
-    var news = [NSDictionary]()
     
 
     override func viewDidLoad() {
@@ -42,7 +40,8 @@ class TableViewViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = news[indexPath.row]["title"] as! String
+        cell.textLabel?.text = news[indexPath.row]["title"] as? String
+//        sharingan = news[indexPath.row]["description"] as? String
         return cell
     }
     
@@ -55,25 +54,31 @@ class TableViewViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     
-    func fetchData()
-    {
-        let parameter = ["source":"bbc-news","sortBy":"top","apiKey":"\(apiKey)"]
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        Alamofire.request("https://newsapi.org/v1/articles", method: .get, parameters: parameter).responseJSON(completionHandler: {response in
-            
-            print(response)
-            let x = response.value as! NSDictionary
-            let y = x["articles"] as! [NSDictionary]
-            self.news = y
-            self.tableView.reloadData()
-        
-        })
-        
-        
-        
+        description_news = news[indexPath.row]["description"] as? String
         
     }
     
+
+    
+    
+    func fetchData()
+    {
+        print(news_channel)
+        let parameter = ["source":"\(news_channel!)","sortBy":"top","apiKey":"\(apiKey)"]
+        Alamofire.request("https://newsapi.org/v1/articles", method: .get, parameters: parameter).responseJSON(completionHandler: {response in
+        
+            let x = response.value as! NSDictionary
+            print(x)
+            let y = x["articles"] as! [NSDictionary]
+            news = y
+            self.tableView.reloadData()
+            
+        
+        
+        })
+    }
     
     
     

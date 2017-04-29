@@ -8,15 +8,19 @@
 
 import UIKit
 
+var news_channel: String!
+let news_array = ["bbc-news","the-times-of-india","techcrunch"]
+
 class ViewController: UIViewController {
+    
+
 
     @IBOutlet weak var BBCbutton: UIButton!
     @IBOutlet weak var TOIbutton: UIButton!
     @IBOutlet weak var Randombutton: UIButton!
     
     
-    var news_channel: String!
-    let apiKey = "86682be37eaa4e739dc706f4b750fe49"
+       let apiKey = "86682be37eaa4e739dc706f4b750fe49"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +34,7 @@ class ViewController: UIViewController {
     
     @IBAction func BBCnews(_ sender: Any) {
         
-        news_channel = "bbc-news"
+        news_channel = news_array[0]
 //        let storyBoard = UIStoryboard(name: "sharingan", bundle: nil)
 //        let controller = storyBoard.instantiateInitialViewController(withIdentifier: "sharingan")
 //        self.present(controller!,animated:true,completion:nil)
@@ -40,13 +44,13 @@ class ViewController: UIViewController {
     
     @IBAction func TOInews(_ sender: Any) {
         
-        news_channel = "the-times-of-india"
+        news_channel = news_array[1]
         self.performSegue(withIdentifier: "goToHome", sender: self)
     }
     
     @IBAction func randomNews(_ sender: Any) {
         
-        news_channel = "techcrunch"
+        news_channel = news_array[2]
         self.performSegue(withIdentifier: "goToHome", sender: self)
     }
     
