@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0AAA781EB642D300DC2CE4 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0AAA771EB642D300DC2CE4 /* WeatherViewController.swift */; };
 		2A476E6B1EB3DAE400D9FFC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A476E6A1EB3DAE400D9FFC1 /* AppDelegate.swift */; };
 		2A476E6D1EB3DAE400D9FFC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A476E6C1EB3DAE400D9FFC1 /* ViewController.swift */; };
 		2A476E701EB3DAE400D9FFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A476E6E1EB3DAE400D9FFC1 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		07D8E153AABE2E834E24B469 /* Pods_NewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4DAEB1D04FB5DAD3444076 /* Pods-NewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2A0AAA771EB642D300DC2CE4 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		2A476E671EB3DAE400D9FFC1 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A476E6A1EB3DAE400D9FFC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A476E6C1EB3DAE400D9FFC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				2A476E761EB3DAE400D9FFC1 /* Info.plist */,
 				2A8A1B8D1EB5183F00808162 /* TableViewViewController.swift */,
 				2A8A1B8F1EB5372300808162 /* DescirptionViewController.swift */,
+				2A0AAA771EB642D300DC2CE4 /* WeatherViewController.swift */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A476E6D1EB3DAE400D9FFC1 /* ViewController.swift in Sources */,
+				2A0AAA781EB642D300DC2CE4 /* WeatherViewController.swift in Sources */,
 				2A8A1B901EB5372300808162 /* DescirptionViewController.swift in Sources */,
 				2A8A1B8E1EB5183F00808162 /* TableViewViewController.swift in Sources */,
 				2A476E6B1EB3DAE400D9FFC1 /* AppDelegate.swift in Sources */,

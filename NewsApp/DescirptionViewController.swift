@@ -14,8 +14,10 @@ class DescirptionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        let greenColor = UIColor(red: 0/255.0, green: 50/255.0, blue: 0/255.0, alpha: 1.0)
+//        view.backgroundColor = greenColor
         textView.text = description_news
-
+        
         // Do any additional setup after loading the view.
     }
 

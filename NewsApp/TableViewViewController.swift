@@ -41,6 +41,7 @@ class TableViewViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = news[indexPath.row]["title"] as? String
+//        cell.textLabel?.font = [UIFont, fontWithName,:@"Avenir Next Regular" size: 14.0]
 //        sharingan = news[indexPath.row]["description"] as? String
         return cell
     }
