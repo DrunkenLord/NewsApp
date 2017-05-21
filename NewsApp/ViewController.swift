@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
 
 
+    @IBOutlet weak var backGroundImage: UIImageView!
     @IBOutlet weak var BBCbutton: UIButton!
     @IBOutlet weak var TOIbutton: UIButton!
     @IBOutlet weak var Randombutton: UIButton!
@@ -24,6 +25,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        BBCbutton.layer.cornerRadius = 20
+        BBCbutton.clipsToBounds = true
+        TOIbutton.layer.cornerRadius = 20
+        TOIbutton.clipsToBounds = true
+        Randombutton.layer.cornerRadius = 20
+        Randombutton.clipsToBounds = true
         // Do any additional setup after loading the view, typically from a nib.
     }
 

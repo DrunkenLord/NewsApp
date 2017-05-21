@@ -132,6 +132,7 @@
 				TargetAttributes = {
 					2A476E661EB3DAE400D9FFC1 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JN457GA6S7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -350,6 +351,7 @@
 			baseConfigurationReference = 0A4DAEB1D04FB5DAD3444076 /* Pods-NewsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JN457GA6S7;
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DrunkenLord.NewsApp;
@@ -363,6 +365,7 @@
 			baseConfigurationReference = DAFB8BC3CBD655825D4269A8 /* Pods-NewsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JN457GA6S7;
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DrunkenLord.NewsApp;
